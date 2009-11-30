@@ -7,47 +7,99 @@
 <!-- but may lead to some differences in layout.   -->
 
 <html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 
-    <!--                                                               -->
-    <!-- Consider inlining CSS to reduce the number of requested files -->
-    <!--                                                               -->
-    <link type="text/css" rel="stylesheet" href="AtomSim.css">
+<!--                                                               -->
+<!-- Consider inlining CSS to reduce the number of requested files -->
+<!--                                                               -->
+<link type="text/css" rel="stylesheet" href="AtomSim.css">
 
-    <!--                                           -->
-    <!-- Any title is fine                         -->
-    <!--                                           -->
-    <title>Web Application Starter Project</title>
-    
-    <!--                                           -->
-    <!-- This script loads your compiled module.   -->
-    <!-- If you add any GWT meta tags, they must   -->
-    <!-- be added before this line.                -->
-    <!--                                           -->
-    <script type="text/javascript" language="javascript" src="atomsim/atomsim.nocache.js"></script>
-  </head>
+<!--                                           -->
+<!-- Any title is fine                         -->
+<!--                                           -->
+<title>AtomSim</title>
 
-  <!--                                           -->
-  <!-- The body can have arbitrary html, or      -->
-  <!-- you can leave the body empty if you want  -->
-  <!-- to create a completely dynamic UI.        -->
-  <!--                                           -->
-  <body>
+<!--                                           -->
+<!-- This script loads your compiled module.   -->
+<!-- If you add any GWT meta tags, they must   -->
+<!-- be added before this line.                -->
+<!--                                           -->
+<script type="text/javascript" language="javascript"
+	src="atomsim/atomsim.nocache.js"></script>
+</head>
 
-    <!-- OPTIONAL: include this if you want history support -->
-    <iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1' style="position:absolute;width:0;height:0;border:0"></iframe>
+<!--                                           -->
+<!-- The body can have arbitrary html, or      -->
+<!-- you can leave the body empty if you want  -->
+<!-- to create a completely dynamic UI.        -->
+<!--                                           -->
+<body>
 
-    <h1>Web Application Starter Project</h1>
+<!-- OPTIONAL: include this if you want history support -->
+<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1'
+	style="position: absolute; width: 0; height: 0; border: 0"></iframe>
 
-    <table align="center">
-      <tr>
-        <td colspan="2" style="font-weight:bold;">Please enter your name:</td>        
-      </tr>
-      <tr>
-        <td id="nameFieldContainer"></td>
-        <td id="sendButtonContainer"></td>
-      </tr>
-    </table>
-  </body>
+<div id="logo"><img alt="AtomSim Logo" src="molecule.jpeg"
+	width="131" height="131"></div>
+
+<h1>AtomSim</h1>
+
+<p>AtomSim is a Web-deployed interface to forcefield-based atom
+dynamics programs. Currently it is an applet / java web start module and
+supports the well-known <a href="https://www.ivec.org/gulp/">General
+Lattice Utility Program, or GULP</a>. In the future it will become a rich
+internet application and will support additional engines such as <a
+	href="http://dirac.cnrs-orleans.fr/MMTK/index.html">MMTK</a>. It can be
+accessed by clicking the launch button below. Java 1.5 or higher must be
+installed on your machine.</p>
+
+<center><a href="GULP.jnlp"><img alt="Launch AtomSim"
+	src="webstart.gif"></a></center>
+
+<p></p>
+
+<h2>Features:</h2>
+<ul>
+	<li>atomic viewer and table structural editor</li>
+	<li>job launcher and remote job submission handler</li>
+	<li>several panels for optimization, md, phonons, data fitting,
+	forcefield creation, structure manipulation, electrostatics and ewald
+	summation, monte carlo simulation, structure prediction, reaction
+	transition point identification, and more.</li>
+	<li>integration with computational cluster, results analysis, and
+	neutron scattering experimental validation in <a href="http://danse.us">DANSE</a>.</li>
+	<li>external database of forcefields</li>
+	<li>shell models and QM/MM integration capable</li>
+</ul>
+
+<h2>Screenshots:</h2>
+<!-- <img alt="md run on intercalated graphite" src="screenshotKC24.jpg"
+height="300"> -->
+<img alt="md run on intercalated graphite" src="screenshotKC24.gif"
+	height="400">
+<br>
+<it>
+Md simulation of potassium intercalated graphite
+</it>
+
+<p></p>
+
+<h2>Questions or Support:</h2>
+
+<p>Contact <a href="jbrkeith@gmail.com">j. keith</a>.</p>
+
+
+<!--    <h1>Web Application Starter Project</h1>-->
+<!---->
+<!--    <table align="center">-->
+<!--      <tr>-->
+<!--        <td colspan="2" style="font-weight:bold;">Please enter your name:</td>        -->
+<!--      </tr>-->
+<!--      <tr>-->
+<!--        <td id="nameFieldContainer"></td>-->
+<!--        <td id="sendButtonContainer"></td>-->
+<!--      </tr>-->
+<!--    </table>-->
+</body>
 </html>
