@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp spec="1.0+"
+      codebase="https://vnf.caltech.edu/vnf/alpha//java">
+    <information>
+        <title>AtomSim</title>
+        <vendor>J. Brandon Keith</vendor>
+        <homepage href="http://atomsimweb.appspot.com/" />
+        <description>A Java web start application</description>
+    </information>
+    <offline-allowed/>
+    <security>
+        <all-permissions/>
+    </security>
+    <resources>
+        <j2se version="1.5+" java-vm-args="-Xmx512m -splash:splash.png"/>
+<jar href="GULP.jar" />
+<jar href="j2ssh.jar" />
+<jar href="commons-logging.jar" />
+<jar href="pg74.216.jdbc3.jar" />
+</resources>
+    <application-desc main-class="javagulp.controller.LaunchGulpUi" >
+<argument>simulationType=gulpsimulations</argument>
+<argument>cgihome=https://vnf.caltech.edu/vnf/alpha/cgi-bin/main.cgi</argument>
+</application-desc>
+</jnlp>
