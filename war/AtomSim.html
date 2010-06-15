@@ -1,105 +1,128 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <!-- The HTML 4.01 Transitional DOCTYPE declaration-->
-<!-- above set at the top of the file will set     -->
-<!-- the browser's rendering engine into           -->
-<!-- "Quirks Mode". Replacing this declaration     -->
+<!-- above set at the top of the file will set -->
+<!-- the browser's rendering engine into -->
+<!-- "Quirks Mode". Replacing this declaration -->
 <!-- with a "Standards Mode" doctype is supported, -->
-<!-- but may lead to some differences in layout.   -->
-
+<!-- but may lead to some differences in layout. -->
 <html>
 <head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-
-<!--                                                               -->
-<!-- Consider inlining CSS to reduce the number of requested files -->
-<!--                                                               -->
-<link type="text/css" rel="stylesheet" href="AtomSim.css">
-
-<!--                                           -->
-<!-- Any title is fine                         -->
-<!--                                           -->
-<title>AtomSim</title>
-
-<!--                                           -->
-<!-- This script loads your compiled module.   -->
-<!-- If you add any GWT meta tags, they must   -->
-<!-- be added before this line.                -->
-<!--                                           -->
-<script type="text/javascript" language="javascript"
-	src="atomsim/atomsim.nocache.js"></script>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <!-- -->
+  <!-- Consider inlining CSS to reduce the number of requested files -->
+  <!-- -->
+  <link type="text/css" rel="stylesheet" href="AtomSim.css">
+  <!-- -->
+  <!-- Any title is fine -->
+  <!-- -->
+  <title>AtomSim</title>
+  <!-- -->
+  <!-- This script loads your compiled module. -->
+  <!-- If you add any GWT meta tags, they must -->
+  <!-- be added before this line. -->
+  <!-- -->
+  <script type="text/javascript" language="javascript"
+  src="atomsim/atomsim.nocache.js">
+  </script>
 </head>
 
-<!--                                           -->
-<!-- The body can have arbitrary html, or      -->
-<!-- you can leave the body empty if you want  -->
-<!-- to create a completely dynamic UI.        -->
-<!--                                           -->
-<body>
-
+<!-- -->
+<!-- The body can have arbitrary html, or -->
+<!-- you can leave the body empty if you want -->
+<!-- to create a completely dynamic UI. -->
+<!-- -->
+<body style="background-color:#dbe1e3">
 <!-- OPTIONAL: include this if you want history support -->
-<iframe src="javascript:''" id="__gwt_historyFrame" tabIndex='-1'
-	style="position: absolute; width: 0; height: 0; border: 0"></iframe>
+<iframe src="javascript:''" id="__gwt_historyFrame" tabindex="-1"
+style="position: absolute; width: 0; height: 0; border: 0">
+</iframe>
 
-<div id="logo"><img alt="AtomSim Logo" src="molecule.jpeg"
-	width="131" height="131"></div>
 
-<h1>AtomSim</h1>
+<h1><span style="font-size: 32pt"><span
+style="color:#2f393c">AtomSim</span></span></h1>
 
-<p>AtomSim is a Web-deployed interface to forcefield-based atom
-dynamics programs. Currently it is an applet / java web start module and
-supports the well-known <a href="https://www.ivec.org/gulp/">General
-Utility Lattice Program, or GULP</a>. In the future it will become a rich
-internet application and will support additional engines such as <a
-	href="http://dirac.cnrs-orleans.fr/MMTK/index.html">MMTK</a>. It can be
-accessed by clicking the launch button below. Java 1.5 or higher must be
-installed on your machine.</p>
-
-<center><a href="gulpLauncher.jnlp"><img alt="Launch AtomSim"
-	src="webstart.gif"></a></center>
+<p>AtomSim is a collection of interfaces to forcefield-based simulators for
+calculating a variety of phenomena, from MD to Monte Carlo, for atomistic
+systems. At a scripting level, it is a collection of python wrappers to
+well-known engines such as <a href="https://www.ivec.org/gulp/">General Utility
+Lattice Program (GULP)</a> or  <a
+href="http://dirac.cnrs-orleans.fr/MMTK/index.html">MMTK</a>. At a GUI level it
+is a web-deployable Java interface. It is used extensively in larger web
+framworks such as the <a href="https://vnf-dev.caltech.edu">Virtual Neutron
+Facility (VNF)</a>, but it can also be accessed as a stand-alone
+application.</p>
 
 <p></p>
 
-<h2>Features:</h2>
+<h2>GUI Interface</h2>
+
+<p>There are two ways to interact with using the launch button below. Note Java
+1.5 or higher must be installed on your machine.</p>
+
+<center>
+<a href="gulpLauncher.jnlp"><img alt="Launch AtomSim"
+src="webstart.gif"></a></center>
+
+<p></p>
+
+<h3>Features:</h3>
 <ul>
-	<li>atomic viewer and table structural editor</li>
-	<li>job launcher and remote job submission handler</li>
-	<li>several panels for optimization, md, phonons, data fitting,
-	forcefield creation, structure manipulation, electrostatics and ewald
-	summation, monte carlo simulation, structure prediction, reaction
-	transition point identification, and more.</li>
-	<li>integration with computational clusters, results analysis, and
-	neutron scattering experimental validation in the <a href="https://vnf-dev.caltech.edu">Virtual Neutron Facility</a>.</li>
-	<li>external database of forcefields</li>
-	<li>shell models and QM/MM integration capable</li>
+  <li>Atomic structure / symmetry editor </li>
+  <li>Bundled library of forcefields including the Universal ForcefField
+  (UFF)</li>
+  <li>Forcefield creator with over 50 types of potentials (experimental)</li>
+  <li>Shell model and QM/MM integration capable</li>
+  <li>Electrostatics / ewald summation options panels</li>
+  <li>Many runtypes panels available: Energy, Optimization, Fitting, Phonons,
+    MD, Monte Carlo, Structure Prediction, Reaction Transition Point
+    Identification</li>
+  <li>Job queue and settings serializer</li>
 </ul>
 
-<h2>Screenshots:</h2>
+<h3>Additional Features in VNF:</h3>
+<ul>
+  <li>Database of materials </li>
+  <li>Database of Jobs</li>
+  <li>Analysis of phonons and md trajectories to calculate Density Of States
+    (DOS), </li>
+  <li>Integration with computational clusters, results analysis, and neutron
+    scattering experimental validation in the <a
+    href="https://vnf-dev.caltech.edu">Virtual Neutron Facility</a>.</li>
+</ul>
+
+<h3>Screenshots:</h3>
 <!-- <img alt="md run on intercalated graphite" src="screenshotKC24.jpg"
 height="300"> -->
 <img alt="md run on intercalated graphite" src="screenshotKC24.gif"
-	height="400">
-<br>
-<it>
-Md simulation of potassium intercalated graphite
-</it>
+height="400"> <br>
+<                  it>Md simulation of potassium intercalated graphite </      
+                                         it>
+
+<p></p>
+
+<p></p>
+
+<h2>Scripting Interface</h2>
+
+<p>The scripting interface can be checked out using</p>
+
+<p><code>svn co svn://danse.us/</code></p>
 
 <p></p>
 
 <h2>Questions or Support:</h2>
 
 <p>Contact <a href="jbrkeith@gmail.com">j. keith</a>.</p>
-
-
-<!--    <h1>Web Application Starter Project</h1>-->
+<!-- <h1>Web Application Starter Project</h1>-->
 <!---->
-<!--    <table align="center">-->
-<!--      <tr>-->
-<!--        <td colspan="2" style="font-weight:bold;">Please enter your name:</td>        -->
-<!--      </tr>-->
-<!--      <tr>-->
-<!--        <td id="nameFieldContainer"></td>-->
-<!--        <td id="sendButtonContainer"></td>-->
-<!--      </tr>-->
-<!--    </table>-->
+<!-- <table align="center">-->
+<!-- <tr>-->
+<!-- <td colspan="2" style="font-weight:bold;">Please enter your name:</td> -->
+<!-- </tr>-->
+<!-- <tr>-->
+<!-- <td id="nameFieldContainer"></td>-->
+<!-- <td id="sendButtonContainer"></td>-->
+<!-- </tr>-->
+<!-- </table>-->
 </body>
 </html>
