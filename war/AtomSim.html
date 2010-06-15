@@ -56,14 +56,24 @@ application.</p>
 
 <h2>GUI Interface</h2>
 
-<p>There are two ways to interact with using the launch button below. Note Java
-1.5 or higher must be installed on your machine.</p>
+<p>There are two ways to interact with the GUI to AtomSim. By logging on to <a
+href="https://vnf-dev.caltech.edu">VNF</a> one can take advantage of database
+support for jobs and atomic structures:</p>
+<ol>
+  <li>Obtain a regular user account or login with username <em>demo</em> and
+    password <em>demo.</em></li>
+  <li>Follow the <a href="http://docs.danse.us/VNET/md-sqe.html">MD workflow
+    tutorial</a>.</li>
+</ol>
+
+<p>while the Google App version (this version) can be launched directly from
+this page:</p>
 
 <center>
 <a href="gulpLauncher.jnlp"><img alt="Launch AtomSim"
 src="webstart.gif"></a></center>
 
-<p></p>
+<p>Note Java 1.5 or higher must be installed on your machine.</p>
 
 <h3>Features:</h3>
 <ul>
@@ -81,13 +91,23 @@ src="webstart.gif"></a></center>
 
 <h3>Additional Features in VNF:</h3>
 <ul>
-  <li>Database of materials </li>
-  <li>Database of Jobs</li>
-  <li>Analysis of phonons and md trajectories to calculate Density Of States
-    (DOS), </li>
-  <li>Integration with computational clusters, results analysis, and neutron
-    scattering experimental validation in the <a
-    href="https://vnf-dev.caltech.edu">Virtual Neutron Facility</a>.</li>
+  <li>Database of uploadable materials </li>
+  <li>Viewer</li>
+  <li>Database of jobs</li>
+  <li>Database of forcefieldsmolDynamics</li>
+  <li>Two remote clusters on which to run calculations</li>
+  <li>Collaboration tools to load and use calculations of others</li>
+  <li>Analysis of phonons and md trajectories
+    <ul>
+      <li>Density Of States (DOS)</li>
+      <li>Velocity autocorrelation function</li>
+      <li>S(Q,E)</li>
+      <li>S(Q)</li>
+      <li>Elastic Incoherent Structure Factor (EISF), and more</li>
+    </ul>
+  </li>
+  <li>Simulation of neutron scattering spectrum from S(Q,E) scattering
+  kernel</li>
 </ul>
 
 <h3>Screenshots:</h3>
@@ -100,15 +120,14 @@ height="400"> <br>
 
 <p></p>
 
-<p></p>
-
 <h2>Scripting Interface</h2>
 
-<p>The scripting interface can be checked out using</p>
+<p>The scripting interface in the <code>memd</code> package can be checked out
+using:</p>
 
-<p><code>svn co svn://danse.us/</code></p>
+<p><code>svn co svn://danse.us/MolDyn/molDynamics/src</code></p>
 
-<p></p>
+<p>Tutorials and python easy install support should be added eventually.</p>
 
 <h2>Questions or Support:</h2>
 
