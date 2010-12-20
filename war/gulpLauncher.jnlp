@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jnlp spec="1.0+"
-      codebase="https://vnf-dev.caltech.edu/vnf/beta//java">
+      codebase="https://vnf-dev.caltech.edu/vnf/dev/java">
     <information>
         <title>AtomSim</title>
         <vendor>J. Brandon Keith</vendor>
@@ -20,6 +20,6 @@
 </resources>
     <application-desc main-class="javagulp.controller.LaunchAtomSim" >
 <argument>simulationType=gulpsimulations</argument>
-<argument>cgihome=https://vnf-dev.caltech.edu/cgi-bin/vnf/beta/main.cgi</argument>
+<argument>cgihome=https://vnf-dev.caltech.edu/cgi-bin/vnf/main.cgi</argument>
 </application-desc>
 </jnlp>
